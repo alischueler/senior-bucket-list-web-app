@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router";
+import ShotTracker from "./ShotTracker"
+import BucketList from "./BucketList";
+import People from "./People"
+import Explore from "./Explore";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/list"
+          element={<BucketList/>}/>
+        <Route path="/people"
+               element={<People/>}/>
+        <Route index element={<Explore/>}/>
+            <Route path="/shots"
+                   element={<ShotTracker/>}>
+            </Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
