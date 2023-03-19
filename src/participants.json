@@ -2,8 +2,6 @@
   {
     "name": "Ali",
     "profile": "AliProfilePic.jpeg",
-    "completed": 4,
-    "left": 46,
     "major": "Computer Science and Biology",
     "minor": "Law & Argumentation",
     "year": 2023
@@ -11,8 +9,6 @@
   {
     "name": "Lindsay",
     "profile": "LindsayProfilePic.jpeg",
-    "completed": 4,
-    "left": 46,
     "major": "Mechanical Engineering",
     "minor": "Physics",
     "year": 2022
@@ -20,8 +16,6 @@
   {
     "name": "Maddie",
     "profile": "MaddieProfilePic.jpeg",
-    "completed": 5,
-    "left": 45,
     "major": "Mechanical Engineering",
     "minor": "this is a test tell me your minor lol I know its something about design",
     "year": 2023
@@ -29,8 +23,6 @@
   {
     "name": "Claire",
     "profile": "ClaireProfilePic.jpeg",
-    "completed": 6,
-    "left": 44,
     "major": "Mechanical Engineering",
     "minor": "this is a test tell me your minor lol I know its something about women",
     "year": 2023

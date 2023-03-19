@@ -1,6 +1,6 @@
 import BottomDirectory from "../BottomDirectory";
 import BucketListItem from "./BucketListItem";
-import items from "./items.json";
+import items from "../data/items.json";
 
 const BucketList = () => {
     return (
