@@ -8,6 +8,8 @@ import Explore from "./explore";
 
 const ExploreScreen = () => {
     const {completed, loading} = useSelector(state => state.completedData)
+    let newC = completed;
+    const reversedC = newC.slice().reverse();
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findComepletedThunk()) // eslint-disable-next-line
@@ -17,7 +19,7 @@ const ExploreScreen = () => {
             <BottomDirectory active="Explore"/>
             <ul className="list-group text-center">
                 <Create completed={completed}/>
-                <Explore completed={completed} loading={loading}/>
+                <Explore completed={reversedC} loading={loading}/>
             </ul>
         </div>
     )

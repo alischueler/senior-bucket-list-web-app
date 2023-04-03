@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_BASE;
-const COMPLETED_API = `${API_BASE}/completed`;
+// const API_BASE = process.env.REACT_APP_API_BASE;
+// const COMPLETED_API = `${API_BASE}/completed`;
+const COMPLETED_API = "http://localhost:4000/api/completed"
 
 export const createCompleted = async (completed) => {
     const response = await axios.post(COMPLETED_API, completed)
