@@ -10,8 +10,8 @@ const Create = ({completed}) => {
     const [uncompleted, setUncompleted] = useState([]);
     const [description, setDescription] = useState('');
     const [date, setDate] = useState('');
-    const [file, setFile] = useState('');
-    const [fileType, setFileType] = useState('');
+    // const [file, setFile] = useState('');
+    // const [fileType, setFileType] = useState('');
 
     const dispatch = useDispatch();
 
