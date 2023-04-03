@@ -2,8 +2,8 @@ import {useSelector} from "react-redux";
 import "./BucketListItem.css"
 
 const BucketListItem = ({item}) => {
-    const completed = useSelector(state => state.completed)
-    const newC = completed.filter(c => c.item === item.title)
+    const { completed } = useSelector(state => state.completedData)
+    const newC = completed.filter(c => c.item.includes(item.title))
     return (
         <li>
             {item.bonus && <b>BONUS </b>}

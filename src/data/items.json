@@ -9,9 +9,9 @@
   { "title": "Drag Brunch" },
   { "title": "Travel to Cape Cod via the Ferry" },
   { "title": "Recreate the Nicole" },
-  { "title": "Iceskating at Frog Pond" },
+  { "title": "Ice Skating on Frog Pond" },
   { "title": "Beanpot" },
-  { "title": "2 v. 2 Volleyball Tourment on Carter" },
+  { "title": "2 v. 2 Volleyball Tourment" },
   { "title": "Trivia Night in a Bar" },
   { "title": "Bar Karaoke" },
   { "title": "Mamma Mia Dance Party" },
@@ -43,7 +43,7 @@
   { "title": "Midnight Volleyball" },
   { "title": "Cappys/NY Pizza and Cartwheels" },
   { "title": "Go to IV Dining Hall for free" },
-  { "title": "Drink a Guinness on St. Patties (Car bomb to drop a shot)" },
+  { "title": "Drink a Guinness on St. Patty's" },
   { "title": "Paper Airplanes off of Columbus Garage" },
   { "title": "Get BEAT BU shirts" },
   { "title": "Ladies Night at Ned’s" },
@@ -54,5 +54,6 @@
   { "title": "Make drink bingo in Puerto Vallerta",
   "bonus":  true},
   { "title": "Create this amazing website",
-  "bonus":  true}
+  "bonus":  true},
+  {"title":  "Car bomb on saint Patty's day", "bonus":  true}
 ]

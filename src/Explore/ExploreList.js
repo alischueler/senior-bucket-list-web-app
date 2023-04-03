@@ -1,6 +1,15 @@
+import {useDispatch} from "react-redux";
+import {deleteCompletedThunk} from "../services/completed-thunks";
+
 const ExploreList = ({item}) => {
+    const l = item.item.length -1
+    const dispatch = useDispatch();
+    const deleteCompletedHandler = (id) => {
+        dispatch(deleteCompletedThunk(id));
+    }
     return (
         <li className="list-group-item">
+            <button className="float-end btn btn-danger" onClick={() => deleteCompletedHandler(item._id)}>X</button>
             {item.image && <img src={`/images/${item.image}`} width="150px" alt="an explore item"/>}
             {item.file &&
             <audio controls>
@@ -13,7 +22,11 @@ const ExploreList = ({item}) => {
             <br/>
             <b>{item.person}</b> {item.description}<br/>
             On: <b>{item.date}</b><br/>
-            Knocking off: <b>{item.item}</b>
+            Knocking off: {item.item.map(i => {
+                return<><b>
+                    {i}
+                </b>{item.item.findIndex(it => it === i) < l && ` and `}</>
+        })}
         </li>
     )
 }

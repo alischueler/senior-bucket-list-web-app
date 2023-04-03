@@ -1,20 +1,25 @@
 import BottomDirectory from "../BottomDirectory";
-import ExploreList from "./ExploreList";
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
+import "../BucketList/BucketListItem.css"
+import {useEffect} from "react";
+import {findComepletedThunk} from "../services/completed-thunks";
+import Create from "./create";
+import Explore from "./explore";
 
-const Explore = () => {
-    const completed = useSelector(state => state.completed)
+const ExploreScreen = () => {
+    const {completed, loading} = useSelector(state => state.completedData)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findComepletedThunk()) // eslint-disable-next-line
+    }, [])
     return (
         <div>
             <BottomDirectory active="Explore"/>
             <ul className="list-group text-center">
-                {
-                    completed.map(item => {
-                        return(<ExploreList item={item}/>);
-                    })
-                }
+                <Create completed={completed}/>
+                <Explore completed={completed} loading={loading}/>
             </ul>
         </div>
     )
 }
-export default Explore
+export default ExploreScreen

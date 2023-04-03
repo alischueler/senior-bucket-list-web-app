@@ -5,15 +5,11 @@ import ShotTrackerItem from "./ShotTrackerItem";
 const ShotTracker = () => {
     const now = Date.now();
     const target = 1682913599000;
-    console.log(now);
-    console.log(target);
     const diff = target - now;
-    console.log(diff);
     const days = Math.floor(diff / 86400000);
     const hours = Math.floor((diff - (days * 86400000)) / 3600000);
     const mins = Math.floor((diff - (days * 86400000) - (hours * 3600000)) / 60000);
     const secs = Math.floor((diff - (days * 86400000) - (hours * 3600000) - (mins * 60000)) / 1000);
-    console.log(days, hours, mins, secs);
     return (
         <div className="container">
             <BottomDirectory active="Shots"/>
