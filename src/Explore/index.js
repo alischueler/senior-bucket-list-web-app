@@ -18,7 +18,7 @@ const ExploreScreen = () => {
         <div>
             <BottomDirectory active="Explore"/>
             <ul className="list-group text-center">
-                <Create completed={completed}/>
+                {/*<Create completed={completed}/>*/}
                 <Explore completed={reversedC} loading={loading}/>
             </ul>
         </div>
