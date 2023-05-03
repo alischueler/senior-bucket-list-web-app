@@ -32,7 +32,7 @@ const CreateShot = () => {
     const { drinks } = useSelector(state => state.drinksData)
     useEffect(() => {
         dispatch(findComepletedThunk())
-        dispatch(findDrinksThunk()) //es-lint disable next line
+        dispatch(findDrinksThunk()) // eslint-disable-next-line
     }, [])
 
     const handlePersonChange = (e) => {
